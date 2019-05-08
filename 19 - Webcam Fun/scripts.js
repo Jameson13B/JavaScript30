@@ -32,11 +32,11 @@ function paintToCanvas() {
     // pixels = redEffect(pixels);
 
     // RGB Split Filter
-    // pixels = rgbSplit(pixels);
-    // ctx.globalAlpha = 0.1;
+    pixels = rgbSplit(pixels);
+    ctx.globalAlpha = 0.1;
 
     // Green Screen Filter
-    pixels = greenScreen(pixels);
+    // pixels = greenScreen(pixels);
     // put them back
     ctx.putImageData(pixels, 0, 0);
   }, 16);
